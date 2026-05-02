@@ -47,7 +47,41 @@
 # Bài 5: Tính chỉ số BMI
 # Yêu cầu: Nhập cân nặng (kg) và chiều cao (mét). Tính chỉ số BMI theo công thức BMI = can_nang / (chieu_cao ** 2). In ra BMI đã được làm tròn đến 1 chữ số thập phân.
 
-can_nang = int(input("Nhap can nang:"))
-chieu_cao = float(input("Nhap chieu cao:"))
-Bmi = can_nang / (chieu_cao ** 2)
-print(f"BMI = {Bmi:.1f}")
+# can_nang = int(input("Nhap can nang:"))
+# chieu_cao = float(input("Nhap chieu cao:"))
+# Bmi = can_nang / (chieu_cao ** 2)
+# print(f"BMI = {Bmi:.1f}")
+
+
+
+
+# Bài 6: Tách số
+# Yêu cầu: Nhập một số có 4 chữ số (ví dụ: 2468). Hãy in ra từng chữ số trên một dòng riêng biệt.
+# Gợi ý: Kết hợp toán tử chia lấy nguyên // và chia lấy dư %.
+
+# n = int(input("Nhap so co 4 chu so: "))
+# nghin = n // 1000
+# tram = (n % 1000) // 100
+# chuc = (n % 100) // 10
+# don_vi = n % 10
+
+# print(nghin)
+# print(tram)
+# print(chuc)
+# print(don_vi)
+
+
+
+
+
+# Bài 7: Tính trung bình cộng
+# Yêu cầu: Nhập vào 5 số thực bất kỳ từ bàn phím. Tính tổng và trung bình cộng của 5 số đó. In kết quả chính xác đến 2 chữ số thập phân.
+
+so_thu_nhat = float(input("Nhap so thuc bat ky: "))
+so_thu_hai = float(input("Nhap so thuc bat ky: "))
+so_thu_ba = float(input("Nhap so thuc bat ky: "))
+so_thu_tu = float(input("Nhap so thuc bat ky: "))
+so_thu_nam = float(input("Nhap so thuc bat ky: "))
+
+so_tb_cong = (so_thu_nhat + so_thu_hai + so_thu_ba + so_thu_tu + so_thu_nam) / 5
+print("Trung binh cong:",so_tb_cong)

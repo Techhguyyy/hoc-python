@@ -66,32 +66,80 @@
 # Dùng if/elif/else để kiểm tra phép tính người dùng chọn và in ra kết quả tương ứng.
 # Gợi ý: Nếu người dùng chọn / mà b bằng 0, hãy in ra "Không thể chia cho 0" để tránh lỗi nhé!
 
+# a = float(input("Nhap so a: "))
+# b = float(input("Nhap so b: "))
+# phep_toan = input("Chon phep tinh (+,-,*,/): ")
 
-a = float(input("Nhap so a: "))
-b = float(input("Nhap so b: "))
-phep_toan = input ("Chon phep tinh (+ ,-,*, /): ")
+# if phep_toan == "+":
+#     ket_qua = a + b
+#     print(f"Ket qua: {a} + {b} = {ket_qua}")
 
-if phep_toan == "+":
-    ket_qua = a + b
-    print(f"ket qua: {a} + {b} = {ket_qua}")
+# elif phep_toan == "-":
+#     ket_qua = a - b
+#     print(f"Ket qua: {a} - {b} = {ket_qua}")
 
-elif phep_toan == "-":
-    ket_qua = a - b
-    print(f"Ket qua: {a} - {b} = {ket_qua}")
+# elif phep_toan == "*":
+#     ket_qua = a * b
+#     print(f"Ket qua: {a} * {b} = {ket_qua}")
 
-elif phep_toan == "*":
-    ket_qua = a - b
-    print(f"Ket qua: {a} * {b} = {ket_qua}")
+# elif phep_toan == "/":
+#     if b == 0:
+#         print("Loi: Ko the chia cho 0!")
+#     else:
+#         ket_qua = a / b
+#         print(f"Ket qua: {a} / {b} = {ket_qua}")
 
-elif phep_toan == "/":
-    if b == 0:
-        print("Loi: Khong the chia cho 0!")
-    else:
-        ket_qua = a / b 
-        print(f"Ket qua: {a} / {b} = {ket_qua}")
-else:
-    print("Phep toan khong hop le! vui long chon +,-,*,/")
-    
-
+# else:
+#     print("PHep toan ko hop le!vui long chon +,-,*,/") 
 
 
+
+
+
+
+#Bai 2:Vong lap(Loops)
+
+# for i in range(10):
+#     print("Hello py")
+
+
+
+
+# so_nhap_vao = int(input("Nhap vao so mong muon: "))
+# for i in range (1, 11):
+#     ket_qua = so_nhap_vao * i
+#     print(f"{so_nhap_vao} * {i} = {ket_qua}")
+
+
+
+
+
+
+
+
+# Bài 6: In hình tam giác sao
+# Hỏi người dùng nhập vào một số nguyên n (ví dụ: 5).
+# Dùng vòng lặp for để in ra n dòng sao, mỗi dòng tăng dần 1 ngôi sao.
+# Gợi ý: Bạn có thể nhân chuỗi với số. Ví dụ: "*" * 3 sẽ ra "***".
+# Kết quả mong đợi (nếu n=5):
+
+# n = int(input("Nhap so mong muon: "))
+# for i in range(1,n+ 1):
+#     print("*" * i)
+
+
+
+
+
+
+
+# Bài 7: Tìm số lớn nhất trong dãy số nhập vào
+# Hỏi người dùng muốn nhập bao nhiêu số (n).
+# Dùng vòng lặp for chạy n lần, mỗi lần hỏi người dùng nhập một số.
+# Lưu trữ số lớn nhất tìm được vào một biến (ví dụ: max_so).
+# Sau khi vòng lặp kết thúc, in ra số lớn nhất đó.
+# Gợi ý:
+# Khởi tạo max_so bằng một số rất nhỏ (hoặc bằng số đầu tiên nhập vào).
+# Mỗi lần nhập số mới (so_hien_tai), hãy kiểm tra: Nếu so_hien_tai > max_so thì cập nhật max_so = so_hien_tai.
+
+n = int(input())
