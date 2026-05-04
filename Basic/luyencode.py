@@ -77,11 +77,25 @@
 # Bài 7: Tính trung bình cộng
 # Yêu cầu: Nhập vào 5 số thực bất kỳ từ bàn phím. Tính tổng và trung bình cộng của 5 số đó. In kết quả chính xác đến 2 chữ số thập phân.
 
-so_thu_nhat = float(input("Nhap so thuc bat ky: "))
-so_thu_hai = float(input("Nhap so thuc bat ky: "))
-so_thu_ba = float(input("Nhap so thuc bat ky: "))
-so_thu_tu = float(input("Nhap so thuc bat ky: "))
-so_thu_nam = float(input("Nhap so thuc bat ky: "))
+# so_thu_nhat = float(input("Nhap so thuc bat ky: "))
+# so_thu_hai = float(input("Nhap so thuc bat ky: "))
+# so_thu_ba = float(input("Nhap so thuc bat ky: "))
+# so_thu_tu = float(input("Nhap so thuc bat ky: "))
+# so_thu_nam = float(input("Nhap so thuc bat ky: "))
 
-so_tb_cong = (so_thu_nhat + so_thu_hai + so_thu_ba + so_thu_tu + so_thu_nam) / 5
-print("Trung binh cong:",so_tb_cong)
+# so_tb_cong = (so_thu_nhat + so_thu_hai + so_thu_ba + so_thu_tu + so_thu_nam) / 5
+# print("Trung binh cong:",so_tb_cong)
+
+
+
+
+
+
+# Bài 8: Đổi giây ra giờ, phút, giây
+# Yêu cầu: Nhập vào một số nguyên t là số giây. Chuyển đổi t thành dạng Gio:Phut:Giay. Mỗi thành phần hiển thị 2 chữ số (có thể dùng zfill hoặc f-string).
+t = int(input("Nhap so giay: "))
+gio = t // 3600
+giay_con_lai = t % 3600
+phut = giay_con_lai // 60
+giay = giay_con_lai % 60
+print(f"{gio: 02d}:{phut:02d}:{giay:02d}")

@@ -142,4 +142,31 @@
 # Khởi tạo max_so bằng một số rất nhỏ (hoặc bằng số đầu tiên nhập vào).
 # Mỗi lần nhập số mới (so_hien_tai), hãy kiểm tra: Nếu so_hien_tai > max_so thì cập nhật max_so = so_hien_tai.
 
-n = int(input())
+# n = int(input("Ban muon nhap bao nhieu so?: "))
+
+# if n > 0:
+#     so_dau_tien = float(input(f"Nhap so thu 1: "))
+#     so_lon_nhat = so_dau_tien
+
+#     for i in range(2,n + 1):
+#         so_moi = float(input(f"Nhap so thu {i}: "))
+
+#         if so_moi > so_lon_nhat:
+#             so_lon_nhat = so_moi
+    
+
+#     print(f"So lon nhat trong day la: {so_lon_nhat} ")
+# else:
+#     print("Ban phai nhap it nhat 1 so!")
+
+
+
+
+mat_khau_dung = "123456"
+nhap_vao = ""
+while nhap_vao != mat_khau_dung:
+    nhap_vao = input("Nhap mat khau: ")
+
+    if nhap_vao != mat_khau_dung:
+        print("Sai mat khau,thu lai!")
+print("Dang nhap thanh cong")
