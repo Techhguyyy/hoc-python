@@ -93,9 +93,135 @@
 
 # Bài 8: Đổi giây ra giờ, phút, giây
 # Yêu cầu: Nhập vào một số nguyên t là số giây. Chuyển đổi t thành dạng Gio:Phut:Giay. Mỗi thành phần hiển thị 2 chữ số (có thể dùng zfill hoặc f-string).
-t = int(input("Nhap so giay: "))
-gio = t // 3600
-giay_con_lai = t % 3600
-phut = giay_con_lai // 60
-giay = giay_con_lai % 60
-print(f"{gio: 02d}:{phut:02d}:{giay:02d}")
+
+# t = int(input("Nhap so giay: "))
+# gio = t // 3600
+# giay_con_lai = t % 3600
+# phut = giay_con_lai // 60
+# giay = giay_con_lai % 60
+# print(f"{gio: 02d}:{phut:02d}:{giay:02d}")
+
+
+
+
+
+
+# Bài 9: Hoán đổi 3 biến (Theo vòng tròn)
+# Yêu cầu: Cho 3 biến x, y, z được gán giá trị bất kỳ. Hoán đổi giá trị của chúng theo vòng tròn: Giá trị của x chuyển sang y, y sang z, z sang x.
+
+# Ví dụ: Ban đầu x=5, y=10, z=15 -> Sau khi đổi: x=15, y=5, z=10.
+
+# Gợi ý: Trong Python có thể làm đơn giản bằng x, y, z = z, x, y
+
+
+# x = float(input("Nhap so bat ky: "))
+# y = float(input("Nhap so bat ky: "))
+# z = float(input("Nhap so bat ky: "))
+# x,y,z = z,y,x
+# print("x = ",x)
+# print("y = ",y)
+# print("z = ",z)
+
+
+
+
+# Bài 10: Tính tổng các ước số (cơ bản)
+# Yêu cầu: Nhập một số nguyên dương n. Hãy tính tổng các ước số thực sự của n. Ước số thực sự là các số tự nhiên nhỏ hơn n chia hết cho n (không tính chính nó).
+
+# n = int(input("Nhap vao so nguyen duong: "))
+# sum = 0
+# for i in range(1,n):
+#     if n % i == 0:
+#         sum += i
+# print("Tong cua so nhap vao la: ",sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Bài 1: In dãy số tự nhiên
+# Yêu cầu: Nhập số nguyên dương n. In ra các số từ 1 đến n, mỗi số cách nhau bởi dấu cách.
+
+# for
+
+# n = int(input("Nhap vao mot so nguyen: "))
+# for i in range(1,n + 1):
+#     print(i,end=" ")
+
+#While
+# n = int(input("Nhap vao mot so nguyen: "))
+# i = 1
+# while i <= n:
+#     print(i,end= " ")
+#     i += 1
+
+
+
+
+# Bài 2: Tính tổng từ 1 đến n
+# Yêu cầu: Nhập số nguyên dương n. Tính tổng S = 1 + 2 + 3 + ... + n.
+# Thực hiện: Dùng cả for và while.
+
+#for 
+# n = int(input("Nhap so nguyen duong: "))
+# tong = 0
+# for i in range(1,n + 1):
+#     tong += i
+# print(tong)
+
+#while
+# n = int(input("Nhap so nguyen duong: "))
+# tong = 0
+# i = 1
+# while i <= n:
+#     tong += i
+#     i += 1
+# print(tong)
+
+
+
+# Bài 3: In bảng cửu chương
+# Yêu cầu: Nhập số nguyên n (từ 1 đến 9). Dùng vòng lặp for in ra bảng cửu chương của n.
+
+# n = int(input("Nhap so ban muon: "))
+# if n < 2 or n > 9:
+#     print("Yeu cau ban nhap lai so!")
+# else:
+#     for i in range(1,11):
+#         ket_qua = n * i
+#         print(f"{n} x {i:2d} = {ket_qua}")
+
+
+
+# Bài 4: In toàn bộ bảng cửu chương
+# Yêu cầu: Dùng 2 vòng lặp lồng nhau in ra tất cả bảng cửu chương từ 1 đến 10. Mỗi bảng cách nhau một dòng trống.
+
+# for i in range(2,10):
+#     for j in range(1,11):
+#         ket_qua = i * j
+#         print(f"{i:2d} x {j:2d} = {ket_qua:3d}")
+
+#     print()
+
+
+
+
+# Bài 5: Đếm số chữ số của một số
+# Yêu cầu: Nhập số nguyên dương n. Dùng vòng lặp while đếm xem n có bao nhiêu chữ số.
+
+n = int(input("Nhap so mong muon: "))
+dem = 0
+while n > 0:
+    n = n // 10
+    dem += 1
+print(dem)
