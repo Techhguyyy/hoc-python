@@ -219,9 +219,36 @@
 # Bài 5: Đếm số chữ số của một số
 # Yêu cầu: Nhập số nguyên dương n. Dùng vòng lặp while đếm xem n có bao nhiêu chữ số.
 
-n = int(input("Nhap so mong muon: "))
-dem = 0
-while n > 0:
-    n = n // 10
-    dem += 1
-print(dem)
+# n = int(input("Nhap so mong muon: "))
+# dem = 0
+# while n > 0:
+#     n = n // 10
+#     dem += 1
+# print(dem)
+
+
+
+
+
+
+
+# Bài 6: Kiểm tra số nguyên tố
+# Yêu cầu: Nhập số nguyên dương n. Dùng vòng lặp for kiểm tra xem n có phải số nguyên tố không.
+
+n = int(input("Nhap so nguyen duong: "))
+
+la_nguyen_to = True
+
+if n < 2:
+    la_nguyen_to = False
+else:
+    for i in range(2,n):
+        if n % i == 0:
+            la_nguyen_to = False
+            break
+
+if la_nguyen_to:
+    print(f"{n} la so nguyen to")
+else:
+    print(f"{n} ko phai so nguyen to")
+    
