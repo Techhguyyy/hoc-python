@@ -235,20 +235,48 @@
 # Bài 6: Kiểm tra số nguyên tố
 # Yêu cầu: Nhập số nguyên dương n. Dùng vòng lặp for kiểm tra xem n có phải số nguyên tố không.
 
-n = int(input("Nhap so nguyen duong: "))
+# n = int(input("Nhap so nguyen duong: "))
 
-la_nguyen_to = True
+# la_nguyen_to = True
 
-if n < 2:
-    la_nguyen_to = False
-else:
-    for i in range(2,n):
-        if n % i == 0:
-            la_nguyen_to = False
-            break
+# if n < 2:
+#     la_nguyen_to = False
+# else:
+#     for i in range(2,n):
+#         if n % i == 0:
+#             la_nguyen_to = False
+#             break
 
-if la_nguyen_to:
-    print(f"{n} la so nguyen to")
-else:
-    print(f"{n} ko phai so nguyen to")
+# if la_nguyen_to:
+#     print(f"{n} la so nguyen to")
+# else:
+#     print(f"{n} ko phai so nguyen to")
+
+
+
+
+# Bài 7: In dãy Fibonacci
+# Yêu cầu: Nhập số nguyên dương n. In ra n số Fibonacci đầu tiên.
+# Quy luật: Số đầu tiên = 1, số thứ hai = 1, số tiếp theo = tổng 2 số trước đó.
+
+
+n = int(input("Nhap n: "))
+a = 1
+b = 1
+
+if n >= 1:
+    print(a, end=" ")
+if n >= 2:
+    print(b, end=" ")
+
+for i in range(3,n + 1):
+    c = a + b
+    print(c, end=" ")
+    a = b
+    b = c
+
     
+
+
+
+
