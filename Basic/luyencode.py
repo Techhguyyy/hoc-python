@@ -254,28 +254,71 @@
 
 
 
+# n = int(input("Nhap so nguyen duong bat ki: "))
+
+# la_nguyen_to = True
+
+# if n < 2:
+#     la_nguyen_to = False
+# else:
+#     for i in range(2,n):
+#         if n % i == 0:
+#             la_nguyen_to = False
+#             break
+# if la_nguyen_to:
+#     print(f"{n} la so nguyen to")
+# else:
+#     print(f"{n} ko phai la so nguyen to")
+
+
+
+
 
 # Bài 7: In dãy Fibonacci
 # Yêu cầu: Nhập số nguyên dương n. In ra n số Fibonacci đầu tiên.
 # Quy luật: Số đầu tiên = 1, số thứ hai = 1, số tiếp theo = tổng 2 số trước đó.
 
+# n = int(input("Nhap n: "))
 
-n = int(input("Nhap n: "))
-a = 1
-b = 1
+# a = 1
+# b = 1
 
-if n >= 1:
-    print(a, end=" ")
-if n >= 2:
-    print(b, end=" ")
+# if n >= 1:
+#     print(a,end=" ")
+# if n >= 2:
+#     print(b,end=" ")
 
-for i in range(3,n + 1):
-    c = a + b
-    print(c, end=" ")
-    a = b
-    b = c
+# for i in range(3,n + 1):
+#     c = a + b
+#     print(c ,end=" ")
+#     a = b
+#     b = c
 
     
+
+
+
+
+
+# Bài 9: Tính giai thừa
+# Yêu cầu: Nhập số nguyên dương n. Tính n! (giai thừa của n).
+# Công thức: n! = 1 * 2 * 3 * ... * n
+# Thực hiện: Dùng for và while (cả 2 cách).
+
+n = int(input("Nhap so nguyen duong: "))
+
+giaithua = 1
+
+if n < 0:
+    print("Ko tinh duoc giai thua so am!")
+else:
+    for i in range(1,n + 1):
+        giaithua *= i
+print(giaithua)
+
+
+
+
 
 
 
