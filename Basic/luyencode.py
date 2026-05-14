@@ -305,6 +305,18 @@
 # Công thức: n! = 1 * 2 * 3 * ... * n
 # Thực hiện: Dùng for và while (cả 2 cách).
 
+# n = int(input("Nhap so nguyen duong: "))
+
+# giaithua = 1
+
+# if n < 0:
+#     print("Ko tinh duoc giai thua so am!")
+# else:
+#     for i in range(1,n + 1):
+#         giaithua *= i
+# print(giaithua)
+
+
 n = int(input("Nhap so nguyen duong: "))
 
 giaithua = 1
@@ -315,6 +327,10 @@ else:
     for i in range(1,n + 1):
         giaithua *= i
 print(giaithua)
+
+
+
+
 
 
 

@@ -162,11 +162,41 @@
 
 
 
-mat_khau_dung = "123456"
-nhap_vao = ""
-while nhap_vao != mat_khau_dung:
-    nhap_vao = input("Nhap mat khau: ")
 
-    if nhap_vao != mat_khau_dung:
-        print("Sai mat khau,thu lai!")
-print("Dang nhap thanh cong")
+
+
+
+
+
+# Hàm (Functions)
+
+# Cú pháp
+
+# def ten_ham(tham_so_1, tham_so_2):
+#     # code xu ly ben trong
+#     # Phai thut le vao trong!
+#     return ket_qua
+
+
+#Vi du
+# def tinh_dien_tich(dai,rong):
+#     dien_tich = dai * rong
+#     return dien_tich
+
+# ket_qua = tinh_dien_tich(5,3)
+# print("Dien tich la:",ket_qua)
+
+
+
+
+#Bai 10
+
+def kiem_tra_chan_le(so):
+    if so % 2 == 0:
+        return True
+    else:
+        return False
+    
+print(kiem_tra_chan_le(4))
+print(kiem_tra_chan_le(7))
+print(kiem_tra_chan_le(10))
