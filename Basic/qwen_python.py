@@ -190,13 +190,26 @@
 
 
 #Bai 10
-
-def kiem_tra_chan_le(so):
-    if so % 2 == 0:
-        return True
-    else:
-        return False
+# def kiem_tra_chan_le(so):
+#     if so % 2 == 0:
+#         return True
+#     else:
+#         return False
     
-print(kiem_tra_chan_le(4))
-print(kiem_tra_chan_le(7))
-print(kiem_tra_chan_le(10))
+# print(kiem_tra_chan_le(4))
+# print(kiem_tra_chan_le(7))
+# print(kiem_tra_chan_le(10))
+
+
+
+
+#Bai 11
+def tinh_diem_tb(danh_sach_diem):
+    if len(danh_sach_diem) == 0:
+        return 0
+    else:
+        return sum(danh_sach_diem) / len(danh_sach_diem)
+print(tinh_diem_tb([8,9,7,10]))
+print(tinh_diem_tb([]))
+
+
