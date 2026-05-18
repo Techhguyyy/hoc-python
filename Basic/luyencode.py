@@ -313,20 +313,152 @@
 #     print("Ko tinh duoc giai thua so am!")
 # else:
 #     for i in range(1,n + 1):
-#         giaithua *= i
+# giaithua *= i
 # print(giaithua)
 
 
-n = int(input("Nhap so nguyen duong: "))
 
-giaithua = 1
 
-if n < 0:
-    print("Ko tinh duoc giai thua so am!")
+
+
+
+
+
+# =========================
+# PHẦN LUYỆN FOR / WHILE (dễ - trung bình)
+# =========================
+
+
+# Bài 10 (FOR): In dãy số cách nhau 2
+# Yêu cầu: Nhập số nguyên dương n. In ra các số: 1, 3, 5, ..., (số lớn nhất <= n).
+# Ví dụ: n=7 => 1 3 5 7
+
+# Gợi ý:
+# - Dùng vòng lặp for: duyệt i từ 1 đến n theo bước 2 (range(1, n+1, 2))
+# - In i ra màn hình (có thể dùng print(i, end=" "))
+
+
+# n = int(input("Nhap vao so nguyen duong: "))
+
+# for i in range(1,n + 1,2):
+#     print(i,end=" ")
+
+
+
+
+
+# Bài 11 (WHILE): Đảo ngược chữ số của một số nguyên
+# Gợi ý:
+# - Khởi tạo rev = 0
+# - Trong khi n > 0:
+#     + digit = n % 10
+#     + rev = rev * 10 + digit
+#     + n = n // 10
+# - In rev
+
+# Yêu cầu: Nhập số nguyên dương n. In ra số đảo ngược của n.
+# Gợi ý: dùng % 10 lấy chữ số cuối và // 10 bỏ chữ số cuối.
+# Ví dụ: n=1234 => 4321
+
+# n = int(input("Nhap vao mot so nguyen duong:"))
+# rev = 0
+# while n > 0:
+#     digit = n % 10
+#     rev = rev * 10 + digit
+#     n = n // 10
+# print(rev)
+
+
+
+
+
+
+
+# Bài 12 (FOR): Tính tổng các số chẵn trong đoạn [1..n]
+# Yêu cầu: Nhập n. Tính và in ra tổng các số chẵn từ 1 đến n.
+# Ví dụ: n=10 => 2+4+6+8+10
+# Gợi ý:
+# - Duyệt bằng for với range(2, n+1, 2)
+# - Khởi tạo tong = 0, mỗi lần cộng i vào
+# - In tong
+
+# n = int(input("Nhap vao mot so bat ky:"))
+
+# sum = 0
+# for i in range(2,n + 1,2):
+#     sum += i
+# print(sum)
+
+
+
+
+
+
+# Bài 13 (WHILE): Kiểm tra số nguyên tố (tối giản)
+# Yêu cầu: Nhập số nguyên dương n. Dùng while để kiểm tra n có phải số nguyên tố không.
+# Gợi ý: chỉ cần thử chia đến khi i*i > n.
+
+n = int(input("Nhap vao so bat ky: "))
+
+i = 2
+so_nguyen_to = True
+
+if n < 2:
+    so_nguyen_to = False
+
+while i * i <= n:
+    if n % i == 0:
+        so_nguyen_to = False
+        break
+    i += 1
+
+if so_nguyen_to:
+    print(n,"la so nguyen to")
 else:
-    for i in range(1,n + 1):
-        giaithua *= i
-print(giaithua)
+    print(n,"Ko phai so nguyen to")
+
+
+
+# Bài 14 (FOR): In tam giác số
+# Yêu cầu: Nhập n. In ra tam giác theo mẫu:
+# Với n=4:
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# Dùng for để in theo từng dòng.
+
+
+# Bài 15 (WHILE): Tìm ước chung của hai số (dạng cơ bản)
+# Yêu cầu: Nhập hai số nguyên dương a và b. Tìm ước chung lớn nhất theo cách cơ bản:
+# Dùng while giảm từ min(a,b) xuống tìm số chia hết cho cả a và b.
+
+
+# Bài 16 (FOR): Đếm chữ số chẵn trong một số
+# Yêu cầu: Nhập số nguyên dương n. Đếm xem trong n có bao nhiêu chữ số chẵn.
+# Ví dụ: n=2487 => có 2,4 => 2 chữ số chẵn.
+
+
+# Bài 17 (WHILE): Tính tổng chữ số của một số
+# Yêu cầu: Nhập số nguyên dương n. Tính tổng các chữ số của n.
+# Ví dụ: n=508 => 5+0+8 = 13.
+
+
+# Bài 18 (FOR): In danh sách các số nguyên tố nhỏ hơn n
+# Yêu cầu: Nhập n (n>2). In ra tất cả số nguyên tố < n, mỗi số cách nhau bởi dấu cách.
+# Ví dụ: n=20 => 2 3 5 7 11 13 17 19
+
+
+# Bài 19 (WHILE): Vẽ hình chữ nhật bằng ký tự '*'
+# Yêu cầu: Nhập chiều cao h và chiều rộng w. Dùng while để in ra hình chữ nhật h dòng, mỗi dòng có w ký tự '*'.
+# Ví dụ: h=3, w=5:
+# *****
+# *****
+# *****
+
+
+# (Không có đáp án) Chúc bạn luyện tập vui vẻ!
+
 
 
 
